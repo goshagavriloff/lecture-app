@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/lecture-app/static/css/main.d5edd8af.css",
+    "main.js": "/lecture-app/static/js/main.912ccea5.js",
+    "static/media/logo.png": "/lecture-app/static/media/logo.84139c2469d301641929.png",
+    "index.html": "/lecture-app/index.html",
+    "main.d5edd8af.css.map": "/lecture-app/static/css/main.d5edd8af.css.map",
+    "main.912ccea5.js.map": "/lecture-app/static/js/main.912ccea5.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d5edd8af.css",
+    "static/js/main.912ccea5.js"
+  ]
+}
