@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import DocViewer, { DocViewerRenderers } from "react-doc-viewer";
+import DocViewer, { DocViewerRenderers } from "@cyntler/react-doc-viewer";
 import { lessonDetailsQuery } from '../utils/data';
 import { useParams } from 'react-router-dom';
 import { fetchJSON, urlFor } from '../client';
@@ -10,6 +10,11 @@ const LessonDetail = () => {
   const [lesson,setLesson]=useState(null);
   const [docs,setDocs]=useState([]);
   const [isError,setIsError]=useState(false);
+  const [activeDocument, setActiveDocument] = useState(null);
+
+  const handleDocumentChange = (document) => {
+    setActiveDocument(document);
+  };
 
   useEffect(()=>{
     const query = lessonDetailsQuery(groupId,lessonId);
@@ -24,6 +29,7 @@ const LessonDetail = () => {
           const {type,topic,files,name}=data[0];
           setLesson({type,topic,files,name});
           setDocs(files);
+          setActiveDocument(files[0]);
           error=false;
         }
       }
@@ -44,7 +50,10 @@ const LessonDetail = () => {
               </div>
 
               <div className="w-full">
-              <DocViewer documents={docs} pluginRenderers={DocViewerRenderers} style={{height:600}}/>
+              <DocViewer documents={docs} pluginRenderers={DocViewerRenderers} style={{height:600}}
+                      activeDocument={activeDocument}
+                      onDocumentChange={handleDocumentChange}
+                      />
               </div>
           </div>
         )}
