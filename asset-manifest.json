@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/lecture-app/static/css/main.d5edd8af.css",
-    "main.js": "/lecture-app/static/js/main.1881cf98.js",
+    "main.css": "/lecture-app/static/css/main.6fd30358.css",
+    "main.js": "/lecture-app/static/js/main.139c1ab8.js",
     "static/media/logo.png": "/lecture-app/static/media/logo.84139c2469d301641929.png",
     "index.html": "/lecture-app/index.html",
-    "main.d5edd8af.css.map": "/lecture-app/static/css/main.d5edd8af.css.map",
-    "main.1881cf98.js.map": "/lecture-app/static/js/main.1881cf98.js.map"
+    "main.6fd30358.css.map": "/lecture-app/static/css/main.6fd30358.css.map",
+    "main.139c1ab8.js.map": "/lecture-app/static/js/main.139c1ab8.js.map"
   },
   "entrypoints": [
-    "static/css/main.d5edd8af.css",
-    "static/js/main.1881cf98.js"
+    "static/css/main.6fd30358.css",
+    "static/js/main.139c1ab8.js"
   ]
 }
