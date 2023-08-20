@@ -4,6 +4,7 @@ import { lessonDetailsQuery } from '../utils/data';
 import { useParams } from 'react-router-dom';
 import { fetchJSON, urlFor } from '../client';
 import NotFound from './NotFound';
+import { ZipRenderer } from '../utils/constans';
 
 const LessonDetail = () => {
   const {groupId,lessonId}=useParams();
@@ -50,7 +51,7 @@ const LessonDetail = () => {
               </div>
 
               <div className="w-full">
-              <DocViewer documents={docs} pluginRenderers={DocViewerRenderers} style={{height:600}}
+              <DocViewer documents={docs} pluginRenderers={[...DocViewerRenderers,ZipRenderer]} style={{height:600}}
                       activeDocument={activeDocument}
                       onDocumentChange={handleDocumentChange}
                       />

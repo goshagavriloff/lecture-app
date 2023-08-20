@@ -6,11 +6,11 @@ const Lesson = ({groupId,lesson,_type}) => {
   const [caption,setCaption]=useState("");
   useEffect(()=>{
     if (_type=="lesson"){
-      setUrl(`/${groupId}/lessons/${lesson._id}`);
+      setUrl(`/lecture-app/${groupId}/lessons/${lesson._id}`);
       setCaption(`Занятие #${lesson.order}`);
     }
     if (_type=="discipline"){
-      setUrl(`/${lesson._id}/lessons`);
+      setUrl(`/lecture-app/${lesson._id}/lessons`);
       setCaption('Дисциплина');
       lesson.type=lesson.owner;
     }

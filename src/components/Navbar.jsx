@@ -13,7 +13,7 @@ const Navbar = ({sidebarMenu}) => {
     <section className="bg-white">
         <nav className="flex justify-between p-6 px-4">
           <div className="flex items-center">
-            <a href="/">
+            <a href="/lecture-app">
               <img className="w-12 sm:w-14" src={logo} alt=""/>
             </a>
 
@@ -36,7 +36,7 @@ const Navbar = ({sidebarMenu}) => {
                 <div className="navbar-menu fixed top-0 left-0 z-50 w-full h-full bg-coolGray-900 bg-opacity-50">
                 <div className="fixed top-0 left-0 bottom-0 w-full w-4/6 max-w-xs bg-white">
                 <nav className="relative p-6 h-full overflow-y-auto">
-                    <a className="inline-block mb-2" href="/">
+                    <a className="inline-block mb-2" href="/lecture-app">
                     <img className="w-12 ml-4 sm:w-14" src={logo} alt="" />
                     </a>
                     <ul>

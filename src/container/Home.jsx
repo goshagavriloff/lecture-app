@@ -13,10 +13,10 @@ const Home = () => {
       <div className="">
         <SearchInput searchTerm={searchTerm} setSearchTerm={setSearchTerm}/>
         <Routes>
-          <Route path='/*' element={<Disciplines />}></Route>
-          <Route path='/:groupId/lessons/' element={<Lessons />}></Route>
-          <Route path='/:groupId/lessons/:lessonId' element={<LessonDetail />}></Route>
-          <Route path='/search' element={<Search searchTerm={searchTerm} setSearchTerm={setSearchTerm}/>}/>
+          <Route path='/lecture-app/*' element={<Disciplines />}></Route>
+          <Route path='/lecture-app/:groupId/lessons/' element={<Lessons />}></Route>
+          <Route path='/lecture-app/:groupId/lessons/:lessonId' element={<LessonDetail />}></Route>
+          <Route path='/lecture-app/search' element={<Search searchTerm={searchTerm} setSearchTerm={setSearchTerm}/>}/>
 
         </Routes>
         

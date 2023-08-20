@@ -47,7 +47,7 @@ const Disciplines = () => {
               <div>
                 <div className="flex flex-col justify-between flex-1 px-6 pt-6 pb-0">
                   <div className="flex-1">
-                    <Link className="block group" to={`/${_id}/lessons`}>
+                    <Link className="block group" to={`/lecture-app/${_id}/lessons`}>
                       <div className="flex items-center justify-between">
                         <h3 className="flex items-center text-xl font-bold leading-7 text-gray-900 group-hover:text-indigo-600">{name}</h3>
                         <span className="inline-flex items-center px-3 py-0.5 rounded-full text-sm font-bold font-display bg-indigo-200 text-indigo-800">{topic}</span>
